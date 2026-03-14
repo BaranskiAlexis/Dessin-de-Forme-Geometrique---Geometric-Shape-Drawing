@@ -1,0 +1,648 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" version="29.6.1">
+  <diagram name="Page-1" id="IDGJOnHvZJPAXRsnPTY_">
+    <mxGraphModel dx="4918" dy="1768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-7" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration-color: currentcolor;&quot; align=&quot;center&quot;&gt;&lt;b&gt;&lt;i&gt;Forme&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;# verificationKIsNotNull(k : const double &amp;amp;) : void&lt;/u&gt;&amp;nbsp;&lt;br&gt;+ Forme(couleur : const Couleur &amp;amp; = Couleur::BLACK)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ clone() : Forme *&lt;/i&gt;&lt;br&gt;+ ~Forme()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getCouleur() : Couleur&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setCouleur(couleur : const Couleur &amp;amp;) : Forme &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ getPoints() : vector&amp;lt;Vecteur2D&amp;gt;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ getAire() : double&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ translation(p : const Vecteur2D &amp;amp;) : Forme &amp;amp;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ homothetie(p : const Vecteur2D &amp;amp;, k : const double &amp;amp;) : Forme &amp;amp;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ rotation(p : const Vecteur2D &amp;amp;, r : const double &amp;amp;) : Forme &amp;amp;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ transformationEcran(m : const Matrice22 &amp;amp;, ab : const double &amp;amp;) : Forme &amp;amp;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;+ charger(path : const string &amp;amp;) : Forme *&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ toString() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator string() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator&amp;lt;&amp;lt;(s : ostream &amp;amp;, f : const Forme &amp;amp;) : ostream &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ accept(visiteur : FormeVisiteur &amp;amp;) : Forme &amp;amp;&lt;/i&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="290" width="420" x="-240" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-11" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration-color: currentcolor;&quot; align=&quot;center&quot;&gt;&lt;b&gt;&lt;i&gt;FormeSimple&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;# verificationNonEgaliteVecteur2D(a : const Vecteur2D &amp;amp;, b : const Vecteur2D &amp;amp;) : void&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;# verificationTailleVector(v : const vector&amp;lt;Vecteur2D&amp;gt; &amp;amp;, i : const int) : void&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;# verificationAccesVector(v : const vector&amp;lt;Vecteur2D&amp;gt; &amp;amp;, i : const int) : void&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;# verificationAccesVectorAddPoint(v : const vector&amp;lt;Vecteur2D&amp;gt; &amp;amp;, i : const int) : void&lt;/u&gt;&amp;nbsp;&lt;br&gt;+ FormeSimple(couleur : const Couleur &amp;amp; = Couleur::BLACK)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ clone() : FormeSimple *&lt;/i&gt;&lt;br&gt;+ ~FormeSimple()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ getPoints() : vector&amp;lt;Vecteur2D&amp;gt;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ setPoints(v : const vector&amp;lt;Vecteur2D&amp;gt; &amp;amp;) :&amp;nbsp;&lt;/i&gt;&lt;i&gt;FormeSimple &lt;/i&gt;&lt;i&gt;&amp;amp;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ getAire() : double&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ translation(p : const Vecteur2D &amp;amp;) :&amp;nbsp;FormeSimple &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ homothetie(p : const Vecteur2D &amp;amp;, k : const double &amp;amp;) :&amp;nbsp;FormeSimple &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ rotation(p : const Vecteur2D &amp;amp;, r : const double &amp;amp;) :&amp;nbsp;FormeSimple &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ transformationEcran(m : const Matrice22 &amp;amp;, ab : const double &amp;amp;) :&amp;nbsp;FormeSimple &amp;amp;&lt;/p&gt;&lt;i&gt;&amp;nbsp; + accept(visiteur : FormeVisiteur &amp;amp;) : FormeSimple &amp;amp;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="260" width="480" x="70" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-12" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration-color: currentcolor;&quot; align=&quot;center&quot;&gt;&lt;b&gt;Segment&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Segment(p1 : const Vecteur2D &amp;amp;, p2 : const Vecteur2D &amp;amp;, couleur : const Couleur &amp;amp; = Couleur::BLACK)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Segment(x1 : const double &amp;amp; = 0, y1 : const double &amp;amp; = 0, x2 : const double &amp;amp; = 1,&amp;nbsp;y2 : const double &amp;amp; = 1,&amp;nbsp;couleur : const Couleur &amp;amp; = Couleur::BLACK)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ clone() : Segment *&lt;br&gt;+ ~Segment()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getp1() : Vecteur2D&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getp2() : Vecteur2D&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setp1(p1 : const Vecteur2D &amp;amp;) : Segment &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setp1(x1 : const double &amp;amp; = 0, y1 : const double &amp;amp; = 0) : Segment &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setp2(p2 : const Vecteur2D &amp;amp;) : Segment &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setp2(x2 : const double &amp;amp; = 1, y2 : const double &amp;amp; = 1) : Segment &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getPoints() : vector&amp;lt;Vecteur2D&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setPoints(v : const vector&amp;lt;Vecteur2D&amp;gt; &amp;amp;) : Segment &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getAire() : double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ toString() : string&lt;/p&gt;&amp;nbsp; + accept(visiteur : FormeVisiteur &amp;amp;) : Segment &amp;amp;" vertex="1">
+          <mxGeometry height="290" width="560" x="70" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-14" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration-color: currentcolor;&quot; align=&quot;center&quot;&gt;&lt;b&gt;Triangle&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Triangle(p1 : const Vecteur2D &amp;amp;, p2 : const Vecteur2D &amp;amp;,&amp;nbsp;p3 : const Vecteur2D &amp;amp;,&amp;nbsp;couleur : const Couleur &amp;amp; = Couleur::BLACK)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+&amp;nbsp;Triangle(x1 : const double &amp;amp; = 0, y1 : const double &amp;amp; = 0, x2 : const double &amp;amp; = 1,&amp;nbsp;y2 : const double &amp;amp; = 1,&amp;nbsp;x3 : const double &amp;amp; = 0,&amp;nbsp;y3 : const double &amp;amp; = 1,&amp;nbsp;couleur : const Couleur &amp;amp; = Couleur::BLACK)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ clone() : Triangle *&lt;br&gt;+ ~Triangle()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getp1() : Vecteur2D&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getp2() : Vecteur2D&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getp3() : Vecteur2D&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setp1(p1 : const Vecteur2D &amp;amp;) :&amp;nbsp;Triangle&amp;nbsp;&amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setp1(x1 : const double &amp;amp; = 0, y1 : const double &amp;amp; = 0) :&amp;nbsp;Triangle&amp;nbsp;&amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setp2(p2 : const Vecteur2D &amp;amp;) :&amp;nbsp;Triangle&amp;nbsp;&amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setp2(x2 : const double &amp;amp; = 1, y2 : const double &amp;amp; = 1) :&amp;nbsp;Triangle&amp;nbsp;&amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setp3(p3 : const Vecteur2D &amp;amp;) :&amp;nbsp;Triangle&amp;nbsp;&amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setp3(x3 : const double &amp;amp; = 0, y3 : const double &amp;amp; = 1) :&amp;nbsp;Triangle&amp;nbsp;&amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getPoints() : vector&amp;lt;Vecteur2D&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setPoints(v : const vector&amp;lt;Vecteur2D&amp;gt; &amp;amp;) :&amp;nbsp;Triangle&amp;nbsp;&amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getAire() : double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ toString() : string&lt;/p&gt;&amp;nbsp; + accept(visiteur : FormeVisiteur &amp;amp;) : Triangle &amp;amp;" vertex="1">
+          <mxGeometry height="330" width="560" x="1350" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-15" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration-color: currentcolor;&quot; align=&quot;center&quot;&gt;&lt;b&gt;Polygone&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;- verificationParametreVector(v : const vector&amp;lt;Vecteur2D&amp;gt; &amp;amp;) : void&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;- verificationParametreVectorEtVecteur2D(v : const vector&amp;lt;Vecteur2D&amp;gt; &amp;amp;, p : const Vecteur2D &amp;amp;) : void&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Polygone(couleur : const Couleur &amp;amp;)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Polygone(v : const vector&amp;lt;Vecteur2D&amp;gt; &amp;amp; = {},&amp;nbsp;couleur : const Couleur &amp;amp; = Couleur::BLACK)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ clone() : Polygone *&lt;br&gt;+ ~Segment()&lt;/p&gt;&amp;nbsp; + getPoints() : vector&amp;lt;Vecteur2D&amp;gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setPoints(v : const vector&amp;lt;Vecteur2D&amp;gt; &amp;amp;) : Polygone &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getPointAt(i : const int) : Vecteur2D&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ addPoint(p : const Vecteur2D &amp;amp;) :&amp;nbsp;Polygone &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ addPointAt(i : const int) :&amp;nbsp;Polygone &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ removePoint(p : const Vecteur2D &amp;amp;) :&amp;nbsp;Polygone &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ removePointAt(i : const int) :&amp;nbsp;Polygone &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ modifyPoint(p : const Vecteur2D &amp;amp;, q : const Vecteur2D &amp;amp;) :&amp;nbsp;Polygone &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ modifyPointAt(i : const int, q : const Vecteur2D &amp;amp;) :&amp;nbsp;Polygone &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ switchPoint(p : const Vecteur2D &amp;amp;, q : const Vecteur2D &amp;amp;) :&amp;nbsp;Polygone &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ switchPointAt(i : const int, j : const int) :&amp;nbsp;Polygone &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ toString() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator+(const Vecteur2D &amp;amp; p) : Polygone &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator-(const Vecteur2D &amp;amp; p) : Polygone &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator[](int i) : Vecteur2D&lt;/p&gt;&amp;nbsp; + accept(visiteur : FormeVisiteur &amp;amp;) : Segment &amp;amp;" vertex="1">
+          <mxGeometry height="360" width="560" x="1990" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-16" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Cercle&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- r : double&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;- verificationRayon(r : const double &amp;amp;) : void&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Cercle(c : const Vecteur2D &amp;amp;, r : const double &amp;amp; = 1, couleur : const Couleur &amp;amp; = Couleur::BLACK)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+&amp;nbsp;Cercle(xc&lt;br&gt; : const double &amp;amp; = 0, yc : const double &amp;amp; = 0, r : const double&lt;br&gt; &amp;amp; = 0,&amp;nbsp;couleur : const Couleur &amp;amp; = Couleur::BLACK)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ clone() : Cercle *&lt;br&gt;+ ~Cercle()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getc() : Vecteur2D&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getr() : dobule&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setc(c : const Vecteur2D &amp;amp;) :&amp;nbsp;Cercle&amp;nbsp;&amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setc(xc : const double &amp;amp; = 0, yc : const double &amp;amp; = 0) :&amp;nbsp;Cercle&amp;nbsp;&amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setr(r : const double &amp;amp;) : Cercle &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getPoints() : vector&amp;lt;Vecteur2D&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setPoints(v : const vector&amp;lt;Vecteur2D&amp;gt; &amp;amp;) :&amp;nbsp;Cercle &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getAire() : double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ toString() : string&lt;/p&gt;&amp;nbsp; + accept(visiteur : FormeVisiteur &amp;amp;) : Cercle &amp;amp;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="315" width="560" x="710" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-17" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration-color: currentcolor;&quot; align=&quot;center&quot;&gt;&lt;b&gt;FormeComposee&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;- copy(f : const FormeCmposee &amp;amp;) : void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;- destroy() : void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;- verificationAccesVector(v : const vector&amp;lt;Forme *&amp;gt; &amp;amp;, i : const int) : void&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;- verificationAccesVectorAddForme(v : const vector&amp;lt;Forme *&amp;gt; &amp;amp;, i : const int) : void&lt;/u&gt;&lt;br&gt;+ FormeComposee(couleur : const Couleur &amp;amp;)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+&amp;nbsp;FormeComposee(v : const vector&amp;lt;Forme *&amp;gt; &amp;amp; = {},&amp;nbsp;couleur : const Couleur &amp;amp; = Couleur::BLACK)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ FormeComposee(f : const FormeComposee &amp;amp;)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator=(f : const FormeComposee) : FormeComposee &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ clone() : Forme *&lt;br&gt;+ ~FormeComposee()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getPoints() : vector&amp;lt;Vecteur2D&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getFormes() : vector&amp;lt;Forme *&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ setFormes(vf : const vector&amp;lt;Forme *&amp;gt; &amp;amp;) : FormeComposee &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getFormeAt(i : const int) : Forme *&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ addForme(f : const Forme &amp;amp;) : FormeComposee &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ addFormeAt(f : const Forme &amp;amp;, i : const int) : FormeComposee &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ removeFormeAt(i : const int) : FormeComposee &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getAire() : double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ translation(p : const Vecteur2D &amp;amp;) :&amp;nbsp;FormeComposee &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ homothetie(p : const Vecteur2D &amp;amp;, k : const double &amp;amp;) :&amp;nbsp;FormeComposee &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ rotation(p : const Vecteur2D &amp;amp;, r : const double &amp;amp;) :&amp;nbsp;FormeComposee &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ transformationEcran(m : const Matrice22 &amp;amp;, ab : const double &amp;amp;) :&amp;nbsp;FormeComposee &lt;i&gt;&amp;amp;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ toString() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator+(f : const Forme &amp;amp;) : FormeComposee &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator-(i : const int) : FormeComposee &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator[](i : const int) : Forme *&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ accept(visiteur : FormeVisiteur &amp;amp;) :&amp;nbsp;FormeComposee &amp;amp;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="460" width="460" x="-580" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-18" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Vecteur2D&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp;+ x : double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp;+ y : double&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Vecteur2D(x : const double &amp;amp; = 0, y : const double &amp;amp; = 0)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator+(v : const Vecteur2D &amp;amp;) : Vecteur2D&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator-() : Vecteur2D&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator-(v : const Vecteur2D &amp;amp;) : Vecteur2D&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator+=(v : const Vecteur2D &amp;amp;) : Vecteur2D&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator*(k : const double &amp;amp;) : Vecteur2D&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator*(v : const Vecteur2D &amp;amp;) : double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator|(v : const Vecteur2D &amp;amp;) : double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ norme2() : double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ norme() : double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator==(v : const Vecteur2D &amp;amp;) : bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator string() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator&amp;lt;&amp;lt;(o : ostream &amp;amp;, v : const Vecteur2D &amp;amp;) : ostream &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="270" width="350" x="1060" y="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-19" edge="1" parent="1" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="-350" y="350" />
+              <mxPoint x="-30" y="350" />
+            </Array>
+            <mxPoint x="-350" y="389.44" as="sourcePoint" />
+            <mxPoint x="-30" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-20" edge="1" parent="1" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="350" />
+              <mxPoint x="-30" y="350" />
+            </Array>
+            <mxPoint x="310" y="390" as="sourcePoint" />
+            <mxPoint x="-30" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-22" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-15" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="2270" y="690" />
+              <mxPoint x="310" y="690" />
+            </Array>
+            <mxPoint x="650" y="730" as="sourcePoint" />
+            <mxPoint x="310" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-23" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-14" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="1630" y="690" />
+              <mxPoint x="310" y="690" />
+            </Array>
+            <mxPoint x="2270" y="740" as="sourcePoint" />
+            <mxPoint x="310" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-24" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-16" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="690" />
+              <mxPoint x="310" y="690" />
+            </Array>
+            <mxPoint x="2270" y="740" as="sourcePoint" />
+            <mxPoint x="310" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-25" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-12" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="690" />
+              <mxPoint x="310" y="690" />
+            </Array>
+            <mxPoint x="990" y="740" as="sourcePoint" />
+            <mxPoint x="310" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-26" edge="1" parent="1" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;strokeWidth=2;entryX=-0.004;entryY=0.862;entryDx=0;entryDy=0;entryPerimeter=0;" target="0i96rh_kmsb2FhD7iOlA-7" value="">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-460" y="270" />
+            </Array>
+            <mxPoint x="-460" y="389.13" as="sourcePoint" />
+            <mxPoint x="-272" y="389.13" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="*" vertex="1">
+          <mxGeometry height="30" width="60" x="-380" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="- v : vector&amp;lt;Forme *&amp;gt;" vertex="1">
+          <mxGeometry height="20" width="160" x="-430" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-30" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-12" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.572;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="0i96rh_kmsb2FhD7iOlA-18" value="">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="1355" />
+            </Array>
+            <mxPoint x="390" y="1239.13" as="sourcePoint" />
+            <mxPoint x="608" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="- p : Vecteur2D[2]" vertex="1">
+          <mxGeometry height="20" width="160" x="670" y="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="2" vertex="1">
+          <mxGeometry height="30" width="60" x="720" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-33" edge="1" parent="1" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;strokeWidth=2;entryX=0.285;entryY=0.002;entryDx=0;entryDy=0;exitX=0.572;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" target="0i96rh_kmsb2FhD7iOlA-18" value="">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="1170" />
+              <mxPoint x="1160" y="1170" />
+              <mxPoint x="1160" y="1221" />
+            </Array>
+            <mxPoint x="990" y="1055" as="sourcePoint" />
+            <mxPoint x="1660" y="1380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="1050" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="- c : Vecteur2D" vertex="1">
+          <mxGeometry height="20" width="160" x="1000" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-37" edge="1" parent="1" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;strokeWidth=2;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="0i96rh_kmsb2FhD7iOlA-18" value="">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1640" y="1072" />
+              <mxPoint x="1640" y="1170" />
+              <mxPoint x="1322" y="1170" />
+            </Array>
+            <mxPoint x="1640" y="1072" as="sourcePoint" />
+            <mxPoint x="1380" y="1446" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="3" vertex="1">
+          <mxGeometry height="30" width="60" x="1460" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="- p : Vecteur2D[3]" vertex="1">
+          <mxGeometry height="20" width="160" x="1410" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-40" edge="1" parent="1" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="0i96rh_kmsb2FhD7iOlA-18" value="">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2277" y="1355" />
+            </Array>
+            <mxPoint x="2277" y="1100" as="sourcePoint" />
+            <mxPoint x="1960" y="1248" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-41" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="*" vertex="1">
+          <mxGeometry height="30" width="60" x="1790" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="- p : vector&amp;lt;Vecteur2D&amp;gt;" vertex="1">
+          <mxGeometry height="20" width="160" x="1740" y="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-46" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration-color: currentcolor;&quot; align=&quot;center&quot;&gt;&lt;b&gt;Matrice22&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Matrice22(ligneHaut : const Vecteur2D &amp;amp;, ligneBas : const Vecteur2D &amp;amp;)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+&amp;nbsp;Matrice22(a11 : const double &amp;amp; = 1, a12 : const double &amp;amp; = 0, a21 : const double &amp;amp; = 0, a22 : const double &amp;amp; = 0)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;+ creeRotation(alpha : const double &amp;amp;) : Matrice22&lt;/u&gt;&lt;br&gt;+ operator*(v : const Vecteur2D &amp;amp;) : Vecteur2D&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator string() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator&amp;lt;&amp;lt;(o : ostream &amp;amp;, mat : const Matrice22 &amp;amp;) : ostream &amp;amp;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="160" width="360" x="1055" y="1580" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-47" edge="1" parent="1" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;strokeWidth=2;entryX=0.507;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1231" y="1529.52" />
+              <mxPoint x="1230" y="1529.52" />
+            </Array>
+            <mxPoint x="1230.52" y="1580" as="sourcePoint" />
+            <mxPoint x="1230" y="1489.52" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="2" vertex="1">
+          <mxGeometry height="30" width="60" x="1170" y="1520" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;+ ligneHaut : Vecteur2D&lt;/div&gt;&lt;div&gt;+ ligneBas : Vecteur2D&lt;/div&gt;" vertex="1">
+          <mxGeometry height="20" width="160" x="1240" y="1525" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-50" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration-color: currentcolor;&quot; align=&quot;center&quot;&gt;&lt;b&gt;&lt;i&gt;FormeCharger&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;- chargerDepuisFluxStart(flux : istringstream &amp;amp;) : Forme *&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;# charger(s : const string &amp;amp;,&amp;nbsp;flux : istringstream &amp;amp;)&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ FormeCharger(suivant : FormeCharger *)&lt;br&gt;+ ~FormeCharger()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;+ getOrigine() : FormeCharger *&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ chargerDepuisFichier(path : const string &amp;amp;) : Forme *&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ chargerDepuisFlux(flux : istringstream &amp;amp;) : Forme *&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="320" x="-190" y="1830" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-52" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration-color: currentcolor;&quot; align=&quot;center&quot;&gt;&lt;b&gt;FormeChargerSegment&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;# charger(s : const string &amp;amp;,&amp;nbsp;flux : istringstream &amp;amp;)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ FormeChargerSegment(suivant : FormeCharger *)&lt;br&gt;+ ~FormeChargerSegment()&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="320" x="-190" y="2060" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-53" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration-color: currentcolor;&quot; align=&quot;center&quot;&gt;&lt;b&gt;FormeChargerCercle&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;# charger(s : const string &amp;amp;,&amp;nbsp;flux : istringstream &amp;amp;)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ FormeChargerCercle(suivant : FormeCharger *)&lt;br&gt;+ ~FormeChargerCercle()&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="320" x="190" y="2060" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-54" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration-color: currentcolor;&quot; align=&quot;center&quot;&gt;&lt;b&gt;FormeChargerTriangle&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;# charger(s : const string &amp;amp;,&amp;nbsp;flux : istringstream &amp;amp;)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ FormeChargerTriangle(suivant : FormeCharger *)&lt;br&gt;+ ~FormeChargerTriangle()&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="320" x="570" y="2060" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-55" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration-color: currentcolor;&quot; align=&quot;center&quot;&gt;&lt;b&gt;FormeChargerPolygone&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;# charger(s : const string &amp;amp;,&amp;nbsp;flux : istringstream &amp;amp;)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ FormeChargerPolygone(suivant : FormeCharger *)&lt;br&gt;+ ~FormeChargerPolygone()&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="320" x="950" y="2060" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-56" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration-color: currentcolor;&quot; align=&quot;center&quot;&gt;&lt;b&gt;FormeChargerFormeComposee&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;# charger(s : const string &amp;amp;,&amp;nbsp;flux : istringstream &amp;amp;)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ FormeChargerFormeComposee(suivant : FormeCharger *)&lt;br&gt;+ ~FormeChargerComposee()&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="340" x="1340" y="2060" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-57" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-56" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="1510" y="2010" />
+              <mxPoint x="-30" y="2010" />
+            </Array>
+            <mxPoint x="650" y="2060" as="sourcePoint" />
+            <mxPoint x="-30" y="1970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-58" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-55" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="1110" y="2010" />
+              <mxPoint x="-30" y="2010" />
+            </Array>
+            <mxPoint x="1510" y="2060" as="sourcePoint" />
+            <mxPoint x="-30" y="1970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-59" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-54" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="2010" />
+              <mxPoint x="-30" y="2010" />
+            </Array>
+            <mxPoint x="1110" y="2060" as="sourcePoint" />
+            <mxPoint x="-30" y="1970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-60" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-53" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="2010" />
+              <mxPoint x="-30" y="2010" />
+            </Array>
+            <mxPoint x="730" y="2060" as="sourcePoint" />
+            <mxPoint x="-30" y="1970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-61" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-52" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="-30" y="2010" />
+            </Array>
+            <mxPoint x="350" y="2060" as="sourcePoint" />
+            <mxPoint x="-30" y="1970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-63" edge="1" parent="1" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;strokeWidth=2;entryX=1.006;entryY=0.36;entryDx=0;entryDy=0;exitX=0.572;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" target="0i96rh_kmsb2FhD7iOlA-50" value="">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="1943" />
+              <mxPoint x="260" y="1880" />
+            </Array>
+            <mxPoint x="130" y="1942.5" as="sourcePoint" />
+            <mxPoint x="800" y="2267.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-64" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="200" y="1900" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-65" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;- suivant : FormeCharger *&lt;/div&gt;" vertex="1">
+          <mxGeometry height="20" width="160" x="270" y="1905" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-66" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-50" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;strokeWidth=2;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=-0.001;entryY=0.357;entryDx=0;entryDy=0;entryPerimeter=0;" target="0i96rh_kmsb2FhD7iOlA-50" value="">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-350" y="1935" />
+              <mxPoint x="-350" y="1880" />
+            </Array>
+            <mxPoint x="-380" y="1925" as="sourcePoint" />
+            <mxPoint x="-200" y="1870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-67" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="-400" y="1890" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-68" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;u&gt;- origine : FormeCharger *&lt;/u&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="20" width="160" x="-350" y="1895" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-70" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration-color: currentcolor;&quot; align=&quot;center&quot;&gt;&lt;b&gt;&lt;i&gt;FormeVisiteur&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ ~FormeVisiteur()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ visit(f : const Segment &amp;amp;) : FormeVisiteur &amp;amp;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ visit(f : const Cercle &amp;amp;) : FormeVisiteur &amp;amp;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ visit(f : const Triangle&amp;nbsp;&amp;amp;) : FormeVisiteur &amp;amp;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ visit(f : const Polygone &amp;amp;) : FormeVisiteur &amp;amp;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;+ visit(f : const FormeComposee &amp;amp;) : FormeVisiteur &amp;amp;&lt;/i&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="320" x="-190" y="2300" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-71" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FormeSauvegarder&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- path : const string&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;- sauvegarderForme(formeToString : const string &amp;amp;) : FormeSauvegarder &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ FormeSauvegarder(path : string)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ ~FormeVisiteur()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ visit(f : const Segment &amp;amp;) : FormeSauvegarder &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ visit(f : const Cercle &amp;amp;) :&amp;nbsp;FormeSauvegarder &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ visit(f : const Triangle&amp;nbsp;&amp;amp;) :&amp;nbsp;FormeSauvegarder &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ visit(f : const Polygone &amp;amp;) :&amp;nbsp;FormeSauvegarder &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ visit(f : const FormeComposee &amp;amp;) :&amp;nbsp;FormeSauvegarder &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="180" width="410" x="-190" y="2510" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-72" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FormeDessiner&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;- adress : const string = &quot;127.0.0.1&quot;&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;- port : const int = 4567&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- sock : socket&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- sockaddr : socketaddr_in = {}&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;- traiteFormePourRequete(f : const Forme &amp;amp;) :&amp;nbsp;FormeDessiner &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;- preTransformationPassageEcran(f : Forme &amp;amp;) :&amp;nbsp;FormeDessiner &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;- envoyerRequete(requete : const string &amp;amp;) :&amp;nbsp;FormeDessiner &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ FormeDessiner()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ ~FormeVisiteur()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ visit(f : const Segment &amp;amp;) :&amp;nbsp;FormeDessiner&amp;nbsp;&amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ visit(f : const Cercle &amp;amp;) :&amp;nbsp;FormeDessiner&amp;nbsp;&amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ visit(f : const Triangle&amp;nbsp;&amp;amp;) :&amp;nbsp;FormeDessiner&amp;nbsp;&amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ visit(f : const Polygone &amp;amp;) :&amp;nbsp;FormeDessiner&amp;nbsp;&amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ visit(f : const FormeComposee &amp;amp;) :&amp;nbsp;FormeDessiner&amp;nbsp;&amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="260" width="370" x="310" y="2510" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-73" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-71" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="15" y="2480" />
+              <mxPoint x="-20" y="2480" />
+            </Array>
+            <mxPoint x="30" y="2480" as="sourcePoint" />
+            <mxPoint x="-20" y="2430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-74" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-72" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="495" y="2480" />
+              <mxPoint x="-20" y="2480" />
+            </Array>
+            <mxPoint x="15" y="2510" as="sourcePoint" />
+            <mxPoint x="-20" y="2430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-76" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MaWinsock&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- wsaData : WSADATA&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;- instanceUnique : MaWinsock *&lt;/u&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;- MaWinsock()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;+ getInstance() : MaWinsock *&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ ~MaWinsock()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="180" x="-120" y="2820" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-78" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Enum&amp;gt;&amp;gt; Couleur&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ BLACK : Couleur&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ BLUE : Couleur&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ RED : Couleur&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ GREEN : Couleur&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ YELLOW : Couleur&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ CYAN : Couleur&lt;/u&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;+ couleurToString(couleur : const Couleur &amp;amp;) : string&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;u&gt;+ stringToCouleur(s : const string &amp;amp;) : Couleur&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="170" width="290" x="400" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-79" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-7" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;strokeWidth=2;entryX=-0.005;entryY=0.371;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" target="0i96rh_kmsb2FhD7iOlA-78" value="">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <Array as="points">
+              <mxPoint x="212" y="92" />
+            </Array>
+            <mxPoint x="212" y="169.13" as="sourcePoint" />
+            <mxPoint x="430" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-80" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="*" vertex="1">
+          <mxGeometry height="30" width="60" x="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-81" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="- couleur : Couleur" vertex="1">
+          <mxGeometry height="20" width="160" x="210" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-84" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionForme&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;ExceptionForme - &quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ what() : const char *&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ operator&amp;lt;&amp;lt;(s : ostream &amp;amp;, e : const ExceptionForme &amp;amp;) : ostream &amp;amp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="380" x="2790" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-85" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionCouleurInconnue&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;La couleur est inconnue&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&amp;nbsp;+ getMessage() : string&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="2790" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-86" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionFormeCharger&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;ExceptionFormeCharge -&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="3240" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-87" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionFileCantBeRead&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;Le fichier ne peut pas être ouvert&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="3360" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-88" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionFileIsEmpty&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;Le fichier est vide&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="3360" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-89" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionFileIsEmpty&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;Aucune forme ne peut être déduite d&#39;une des chaînes de caractères du fichier&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="110" width="380" x="3360" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-90" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionFormeComposee&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;ExceptionFormeComposee -&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="3740" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-91" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionArrayOutOfBoundFC&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;La case du tableau n&#39;existe pas&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="3860" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-92" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionFormeSimple&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;ExceptionFormeSimple -&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="4240" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-93" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionArrayIsTooShort&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;Le tableau ne possede pas suffisamment de points pour couvrir la forme&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="110" width="380" x="4360" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-94" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionArrayOutOfBound&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;La case du tableau n&#39;existe pas&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="4360" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-95" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionCercle&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;ExceptionCercle -&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="4360" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-96" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionRayonNegatif&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;Le rayon doit etre superieur a 0&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="4360" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-97" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionPointEqualsAnotherPoint&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;Deux des points sont de memes coordonnees&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="4360" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-98" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionKIsNull&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;Le rapport d&#39;homothetie k = 0 est interdit&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="4740" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-99" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionFormeVisiteur&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;ExceptionFormeVisiteur -&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="5240" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-100" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionDessin&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;ExceptionDessin -&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="5360" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-101" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionConnexionImpossible&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;Il est impossible de se connecter au serveur&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&amp;nbsp;&amp;nbsp;+ getMessage() : string&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="5470" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-102" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionCreationSocket&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;Il est impossible de creer le socket&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="5470" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-103" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionEnvoieImpossible&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;Il est impossible d&#39;envoyer un message&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="5470" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-104" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionParametragePaquet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;Il est impossible de parametrer les paquets&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="5470" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-105" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionTransformationForme&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;Il est impossible de transformer la forme&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="5470" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-106" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionSauvegarder&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;ExceptionSauvegarder -&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="5850" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-107" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExceptionFileCantBeOpen&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- message : string = &quot;&amp;nbsp;Le fichier ne peut pas etre cree&quot;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ getMessage() : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="380" x="5960" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-108" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-99" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="5430" y="200" />
+              <mxPoint x="2975" y="200" />
+            </Array>
+            <mxPoint x="4295" y="260" as="sourcePoint" />
+            <mxPoint x="2975" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-109" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-98" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="4930" y="200" />
+              <mxPoint x="2975" y="200" />
+            </Array>
+            <mxPoint x="5430" y="240" as="sourcePoint" />
+            <mxPoint x="2975" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-110" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-92" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="4430" y="200" />
+              <mxPoint x="2975" y="200" />
+            </Array>
+            <mxPoint x="4930" y="240" as="sourcePoint" />
+            <mxPoint x="2975" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-111" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-90" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="3930" y="200" />
+              <mxPoint x="2975" y="200" />
+            </Array>
+            <mxPoint x="4430" y="240" as="sourcePoint" />
+            <mxPoint x="2975" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-112" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-86" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="3430" y="200" />
+              <mxPoint x="2975" y="200" />
+            </Array>
+            <mxPoint x="3930" y="240" as="sourcePoint" />
+            <mxPoint x="2975" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-113" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-85" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0.487;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="2975" y="200" />
+            </Array>
+            <mxPoint x="3430" y="240" as="sourcePoint" />
+            <mxPoint x="2975" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-114" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-89" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="3300" y="715" />
+              <mxPoint x="3300" y="370" />
+            </Array>
+            <mxPoint x="3300" y="723.3334073153409" as="sourcePoint" />
+            <mxPoint x="3300" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-115" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-88" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="3300" y="570" />
+              <mxPoint x="3300" y="370" />
+            </Array>
+            <mxPoint x="3360" y="715" as="sourcePoint" />
+            <mxPoint x="3300" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-116" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-87" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="3300" y="430" />
+              <mxPoint x="3300" y="370" />
+            </Array>
+            <mxPoint x="3360" y="570" as="sourcePoint" />
+            <mxPoint x="3300" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-117" edge="1" parent="1" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="3800" y="430" />
+              <mxPoint x="3800" y="370" />
+            </Array>
+            <mxPoint x="3860" y="430" as="sourcePoint" />
+            <mxPoint x="3800" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-119" edge="1" parent="1" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="4300" y="715" />
+              <mxPoint x="4300" y="370" />
+            </Array>
+            <mxPoint x="4360" y="715" as="sourcePoint" />
+            <mxPoint x="4300" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-121" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-97" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="4300" y="1000" />
+              <mxPoint x="4300" y="370" />
+            </Array>
+            <mxPoint x="4360" y="860" as="sourcePoint" />
+            <mxPoint x="4300" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-122" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-94" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="4300" y="580" />
+              <mxPoint x="4300" y="370" />
+            </Array>
+            <mxPoint x="4360" y="1000" as="sourcePoint" />
+            <mxPoint x="4300" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-123" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-93" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="4300" y="435" />
+              <mxPoint x="4300" y="370" />
+            </Array>
+            <mxPoint x="4360" y="580" as="sourcePoint" />
+            <mxPoint x="4300" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-124" edge="1" parent="1" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="4549.38" y="795" />
+            </Array>
+            <mxPoint x="4549" y="810" as="sourcePoint" />
+            <mxPoint x="4549.38" y="765" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-127" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-100" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="5300" y="430" />
+              <mxPoint x="5300" y="370" />
+            </Array>
+            <mxPoint x="5360" y="1000" as="sourcePoint" />
+            <mxPoint x="5300" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-128" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-101" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="5410" y="550" />
+              <mxPoint x="5410" y="520" />
+              <mxPoint x="5410" y="505" />
+            </Array>
+            <mxPoint x="5470" y="565" as="sourcePoint" />
+            <mxPoint x="5410" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-131" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-102" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="5410" y="680" />
+              <mxPoint x="5410" y="520" />
+              <mxPoint x="5410" y="505" />
+            </Array>
+            <mxPoint x="5470" y="550" as="sourcePoint" />
+            <mxPoint x="5410" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-132" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-103" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="5410" y="810" />
+              <mxPoint x="5410" y="520" />
+              <mxPoint x="5410" y="505" />
+            </Array>
+            <mxPoint x="5470" y="680" as="sourcePoint" />
+            <mxPoint x="5410" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-133" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-104" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="5410" y="940" />
+              <mxPoint x="5410" y="520" />
+              <mxPoint x="5410" y="505" />
+            </Array>
+            <mxPoint x="5470" y="810" as="sourcePoint" />
+            <mxPoint x="5410" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-134" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-105" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="5410" y="1070" />
+              <mxPoint x="5410" y="520" />
+              <mxPoint x="5410" y="505" />
+            </Array>
+            <mxPoint x="5470" y="940" as="sourcePoint" />
+            <mxPoint x="5410" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-135" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-106" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="0i96rh_kmsb2FhD7iOlA-99" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="5820" y="420" />
+              <mxPoint x="5820" y="320" />
+              <mxPoint x="5820" y="290" />
+            </Array>
+            <mxPoint x="5750" y="865" as="sourcePoint" />
+            <mxPoint x="5690" y="275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i96rh_kmsb2FhD7iOlA-136" edge="1" parent="1" source="0i96rh_kmsb2FhD7iOlA-107" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="5890" y="550" />
+              <mxPoint x="5890" y="510" />
+              <mxPoint x="5890" y="495" />
+            </Array>
+            <mxPoint x="5950" y="540" as="sourcePoint" />
+            <mxPoint x="5890" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
